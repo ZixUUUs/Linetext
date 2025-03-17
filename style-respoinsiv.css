@@ -1,0 +1,143 @@
+@media (max-width: 1400px) {
+  .linText-nav {
+    padding: 14px 40px 14px 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .linText-nav {
+    padding: 14px 20px 14px 20px;
+  }
+}
+@media (max-width: 990px) {
+  /*naptec-header*/
+  header .naptec-nav {
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  /*responsiv-menu*/
+  .responsivity {
+    display: flex;
+  }
+  .responsivity button {
+    display: flex;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+  }
+  .responsivity button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .logo {
+    align-self: center;
+  }
+  .side-bare-div {
+    position: fixed;
+    top: 138px;
+    left: 0;
+    background-color: #ede6db;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 70px;
+    animation: start 0.5s ease-in-out forwards;
+    z-index: 9999;
+    border-top: 2px solid #d86752;
+  }
+  @keyframes start {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 98%;
+    }
+  }
+  @keyframes end {
+    from {
+      width: 98%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  .side-bare-div img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    align-self: center;
+  }
+  .close-btn {
+    position: absolute;
+    left: 88%;
+    top: 1%;
+    background: none;
+    border: none;
+  }
+  .close-btn svg {
+    width: 30px;
+    height: 30px;
+    color: #143338;
+  }
+  /*syling*/
+  .linText-logo {
+    margin-left: 150px;
+  }
+  .linText-nav .left-nav {
+    gap: 0;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 60px 0 0 60px;
+  }
+  .nav-list ul li a {
+    color: #073b43;
+  }
+}
+@media (max-width: 770px) {
+  .side-bare-div {
+    top: 128px;
+  }
+  .naptec-nav .list-login ul {
+    gap: 25px;
+  }
+  .naptec-nav .list-login ul li img {
+    width: 35px;
+    height: 35px;
+  }
+  .list-login ul li a {
+    font-size: 14px;
+  }
+  .right-nav .get-a-quote-button {
+    display: none;
+  }
+  .linText-logo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 450px) {
+  .list-login ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  header .naptec-nav {
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+  }
+  .naptec-logo img {
+    width: 80px;
+  }
+  .list-login ul li a {
+    font-size: 10px;
+  }
+}
