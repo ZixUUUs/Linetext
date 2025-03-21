@@ -403,6 +403,9 @@ section {
   background-color: #f4f4f4;
   padding: 16px;
 }
+.categorie-cards ul li:hover .card .contianer-img-card img {
+  transform: scale(1.2);
+}
 .categorie-cards ul li .card {
   position: relative;
   max-width: 100%;
@@ -426,6 +429,7 @@ section {
   height: 100%;
   display: flex;
   object-fit: cover;
+  transition: all 0.4s ease;
 }
 .card .card-title {
   align-self: flex-start;
@@ -613,4 +617,150 @@ section {
   line-height: 28px;
   vertical-align: middle;
   color: #1a3748;
+}
+/*--section-6--*/
+/*--footer--*/
+footer {
+  width: 100%;
+  background-color: #1a3748;
+  padding: 0 100px 0 100px;
+}
+footer .container-padding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 80px 100px 80px;
+}
+.container-padding .left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 142px;
+}
+.left-footer .get-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.get-email .title-footer h1 {
+  font-family: PP Agrandir;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 44px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.get-email form {
+  position: relative;
+}
+.get-email form input {
+  width: 451px;
+  height: 56px;
+  border: none;
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+.get-email form input::placeholder {
+  font-family: PP Agrandir;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  padding-left: 24px;
+  color: #073b43;
+}
+.get-email form button {
+  position: absolute;
+  left: 256px;
+  top: 4px;
+  width: 188px;
+  height: 48px;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 32px 16px 32px;
+  background-color: #d86752;
+  /*text*/
+  font-family: PP Agrandir;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+.get-email form button:hover {
+  transform: translateX(-10px);
+}
+.footer-logo {
+  max-width: 128px;
+  height: 56px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%) grayscale(100%) brightness(200%);
+}
+.container-padding .right-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+.right-footer .footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 226px;
+}
+.footer-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-list ul li:nth-child(1) a {
+  position: relative;
+  font-family: PP Agrandir;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  transition: none;
+}
+.footer-list ul li a {
+  position: relative;
+  font-family: PP Agrandir;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+.footer-list ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+.footer-list ul li a:hover:before {
+  transform: scaleX(1);
+}
+.right-footer .copyright h6 {
+  font-family: PP Agrandir;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  vertical-align: middle;
+  color: #ffffff99;
 }
