@@ -40,6 +40,20 @@
   .categorie-cards ul {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
+  /*section-6*/
+  .side-circle-div {
+    padding-left: 40px;
+    width: 55%;
+    height: 600px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 480px;
+    max-height: 400px;
+  }
 }
 @media (max-width: 1200px) {
   .sec-padding-wrapper {
@@ -87,6 +101,19 @@
   }
   .card .card-title {
     padding: 16px 16px 0 0;
+  }
+  /*section-6*/
+  .side-circle-div {
+    padding-left: 20px;
+    height: 600px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 410px;
+    max-height: 400px;
   }
 }
 @media (max-width: 990px) {
@@ -254,6 +281,23 @@
     max-width: 100%;
     width: 100%;
   }
+  /*section-4*/
+  /*section-5*/
+  .title-sec-5 p {
+    padding: 0 0 0 0;
+  }
+  /*section-6*/
+  .side-circle-div {
+    width: 500px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 410px;
+    max-height: 400px;
+  }
 }
 @media (max-width: 770px) {
   .side-bare-div {
@@ -302,6 +346,18 @@
     height: 400px;
     background-color: #f4f4f4;
     padding: 16px;
+  }
+  /*section-6*/
+  .side-circle-div {
+    width: 480px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 380px;
+    max-height: 400px;
   }
 }
 @media (max-width: 600px) {
@@ -365,6 +421,22 @@
     background-color: #f4f4f4;
     padding: 16px;
   }
+  /*section-5*/
+  .title-sec-5 {
+    width: 400px;
+  }
+  /*section-6*/
+  .side-circle-div {
+    width: 440px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 380px;
+    max-height: 400px;
+  }
 }
 @media (max-width: 450px) {
   .list-login ul li a {
@@ -402,6 +474,28 @@
   .img-sec-3 img {
     object-fit: cover;
     object-position: 48% 50%;
+  }
+  /*section-5*/
+  .title-sec-5 {
+    width: 380px;
+  }
+  /*section-6*/
+  .side-circle-div {
+    width: 390px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+    max-height: 380px;
+  }
+  .text-side-circle h1 {
+    font-size: 46px;
+  }
+  .text-side-circle p {
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
@@ -452,5 +546,32 @@
   }
   .title-sec-4 p {
     font-size: 16px;
+  }
+  /*section-5*/
+  .title-sec-5 {
+    width: 300px;
+  }
+  .title-sec-5 p {
+    padding: 0 30px 0 0;
+  }
+  /*section-6*/
+  .side-circle-div {
+    padding-left: 10px;
+    width: 275px;
+  }
+
+  .side-circle-div .text-side-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 280px;
+    max-height: 380px;
+  }
+  .text-side-circle h1 {
+    font-size: 40px;
+  }
+  .text-side-circle p {
+    font-size: 12px;
+    padding-right: 50px;
   }
 }
