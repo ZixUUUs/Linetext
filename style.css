@@ -48,10 +48,26 @@ header .naptec-nav {
   gap: 56px;
 }
 .list-login ul li a {
+  position: relative;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.125rem;
   color: #ffffff;
+}
+.list-login ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+.list-login ul li a:hover:before {
+  transform: scaleX(1);
 }
 .list-login ul li:last-child {
   display: flex;
@@ -94,6 +110,7 @@ header .naptec-nav {
   gap: 60px;
 }
 .linText-nav .left-nav .nav-list ul li a {
+  position: relative;
   font-family: PP Agrandir;
   font-weight: 400;
   font-size: 16px;
@@ -101,6 +118,21 @@ header .naptec-nav {
   text-align: center;
   vertical-align: middle;
   color: #0d384a;
+}
+.linText-nav .left-nav .nav-list ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+.linText-nav .left-nav .nav-list ul li a:hover:before {
+  transform: scaleX(1);
 }
 .right-nav {
   display: flex;
@@ -617,6 +649,11 @@ section {
   line-height: 28px;
   vertical-align: middle;
   color: #1a3748;
+}
+.text-side-circle a:hover {
+  color: #ffffff;
+  border-color: #1a3748;
+  background-color: #1a3748;
 }
 /*--section-6--*/
 /*--footer--*/
